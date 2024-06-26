@@ -4,16 +4,7 @@ import 'package:login_with_firebase_part7/LoginScreen.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
-      options: const FirebaseOptions(
-          apiKey: "AIzaSyBOJLVgX2oMRSm-ws9rxLAD1YFzTlBMfNQ",
-          authDomain: "authentication-demo-8d328.firebaseapp.com",
-          projectId: "authentication-demo-8d328",
-          storageBucket: "authentication-demo-8d328.appspot.com",
-          messagingSenderId: "153765246896",
-          appId: "1:153765246896:web:ad735121abe0084748c875",
-          measurementId: "G-1EQSXT1MXW"
-      ));
+  await Firebase.initializeApp(); /// here you have to add option from your firebase project
       runApp(const MyApp());
 }
 
